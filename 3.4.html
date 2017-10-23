@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Guessing Game</title>
+    <title>Guess the difference</title>
     <style>
         img {
             position: absolute;
@@ -11,7 +11,7 @@
             width: 500px;
             height: 500px;
         }
-        #rightSide {
+        #rightSide{
             left: 500px;
             border-left: 1px solid black;
         }
@@ -60,7 +60,7 @@
         generateFaces();
 
         theBody.onclick = function gameOver() {
-            alert("Game Over!\n\n Your lost level "+ count +".");
+            alert("Game Over!\n\n you reached till level "+ count +".");
             theBody.onclick = null;
             theLeftSide.lastChild.onclick = null;
         }
