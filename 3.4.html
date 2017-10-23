@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Matching Game</title>
+    <title>Guessing Game</title>
     <style>
         img {
             position: absolute;
@@ -24,6 +24,7 @@
     </div>
     <div id="rightSide">
     </div>
+    
     <script>
         var numberOfFaces = 5;
         var theLeftSide = document.getElementById("leftSide");
@@ -57,7 +58,6 @@
             count++;
         }
         generateFaces();
-
 
         theBody.onclick = function gameOver() {
             alert("Game Over!\n\n Your lost level "+ count +".");
